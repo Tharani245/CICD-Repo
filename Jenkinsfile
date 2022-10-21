@@ -14,7 +14,7 @@ pipeline {
         }
         stage("Test and Code Coverage") {
             steps {
-                junit 'target/surfire-reports/**/*.xml'
+                junit 'target/*.xml'
                 jacoco ()
             }
         }
