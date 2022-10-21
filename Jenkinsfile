@@ -12,11 +12,6 @@ pipeline {
                 sh "mvn clean install"
             }
         }
-        stage("package") {
-            steps {
-                sh "mvn package"
-            }
-        }
         stage("code analysis") {
             steps {
                 script {
@@ -28,17 +23,16 @@ pipeline {
         }
         stage("Upload in Artifactory") {
             steps {
-                rtupload (
-                    serverId:"jfrog-artifact",
-                    spec:''' {
+                rtUpload (
+                    serverId: 'jfrog-artifact',
+                    spec: '''{
                         "files": [
                             {
-                                "pattern"="*.war",
-                                "target"="demomavenrepo"
+                                "pattern": "*.war",
+                                "target": "demomavenrepo"
                             }
                         ]
                     }''',
-
                 )
             }
         }
