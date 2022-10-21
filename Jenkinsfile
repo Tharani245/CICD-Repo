@@ -14,6 +14,7 @@ pipeline {
         }
         stage("Test and Code Coverage") {
             steps {
+                mnv test
                 junit allowEmptyResults: true, testResults: '**/test-results/*.xml'
                 // junit '**/test-reports/*.xml'
                 jacoco ()
