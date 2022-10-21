@@ -52,7 +52,7 @@ pipeline {
                         "files": [
                             {
                                 "pattern": "*.war",
-                                "target": "target"
+                                "target": "Declarative_Pipeline_Project/"
                             }
                         ]
                     }''',
