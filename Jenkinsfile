@@ -36,5 +36,20 @@ pipeline {
                 )
             }
         }
+        stage("download from artifactory") {
+            steps {
+                rtDownload (
+                    serverId: 'jfrog-artifact',
+                    spec: '''{
+                        "files": [
+                            {
+                                "pattern": "*.war",
+                                "target": "demomavenrepo"
+                            }
+                        ]
+                    }''',
+                )
+            }
+        }
     }
 }
