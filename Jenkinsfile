@@ -12,11 +12,6 @@ pipeline {
                 sh "mvn clean install"
             }
         }
-        stage("build") {
-            steps {
-                sh "mvn clean install"
-            }
-        }
         stage("package") {
             steps {
                 sh "mvn package"
