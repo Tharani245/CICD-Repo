@@ -54,7 +54,7 @@ pipeline {
                         "files": [
                             {
                                 "pattern": "*.war",
-                                "target": "artifacts\"
+                                "target": "\"
                             }
                         ]
                     }''',
