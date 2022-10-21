@@ -12,6 +12,12 @@ pipeline {
                 sh "mvn clean install"
             }
         }
+        stage("Test and Code Coverage") {
+            steps {
+                junit 'target/surfire-reports/**/*.xml'
+                jacoco ()
+            }
+        }
         stage("code analysis") {
             steps {
                 script {
