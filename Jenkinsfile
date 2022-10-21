@@ -41,6 +41,8 @@ pipeline {
                             }
                         ]
                     }''',
+                    buildName: 'firstbuild',
+                    buildNumber: '1'
                 )
             }
         }
@@ -56,9 +58,6 @@ pipeline {
                             }
                         ]
                     }''',
-                    
-                    buildName: 'firstbuild',
-                    buildNumber: '1'
                 )
             }
         }
