@@ -52,7 +52,7 @@ pipeline {
                         "files": [
                             {
                                 "pattern": "*.war",
-                                "target": "C:\Users\Shanmugam K\.jenkins\workspace\Declarative_Pipeline_Project"
+                                "target": "target"
                             }
                         ]
                     }''',
