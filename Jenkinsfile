@@ -52,7 +52,7 @@ pipeline {
                         "files": [
                             {
                                 "pattern": "*.war",
-                                "target": "demomavenrepo"
+                                "target": "D:\"
                             }
                         ]
                     }''',
