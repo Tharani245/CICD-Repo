@@ -57,7 +57,7 @@ pipeline {
                         ]
                     }''',
                     
-                    buildName: 'firstbuild'
+                    buildName: 'firstbuild',
                     buildNumber: '1'
                 )
             }
