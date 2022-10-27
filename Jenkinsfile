@@ -41,8 +41,9 @@ pipeline {
                             }
                         ]
                     }''',
-                    buildName: 'second build',
-                    buildNumber: '2'
+                    buildName: 'first build',
+                    buildNumber: '1'
+                    project: 'projectkey'
                 )
             }
         }
@@ -58,6 +59,9 @@ pipeline {
                             }
                         ]
                     }''',
+                    buildName: 'first build',
+                    buildNumber: '1'
+                    project: 'projectkey'
                 )
             }
         }
