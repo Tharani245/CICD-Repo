@@ -41,8 +41,8 @@ pipeline {
                             }
                         ]
                     }''',
-                    buildName: 'firstbuild',
-                    buildNumber: '1'
+                    buildName: 'second build',
+                    buildNumber: '2'
                 )
             }
         }
