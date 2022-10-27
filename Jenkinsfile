@@ -42,7 +42,7 @@ pipeline {
                         ]
                     }''',
                     buildName: 'first build',
-                    buildNumber: '1'
+                    buildNumber: '1',
                     project: 'projectkey'
                 )
             }
@@ -60,7 +60,7 @@ pipeline {
                         ]
                     }''',
                     buildName: 'first build',
-                    buildNumber: '1'
+                    buildNumber: '1',
                     project: 'projectkey'
                 )
             }
